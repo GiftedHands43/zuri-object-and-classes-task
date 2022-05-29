@@ -16,7 +16,7 @@ class Student:
 
     def add_tracks(self, add_tracks):
         self.add_tracks = add_tracks
-        print('My track is', add_tracks)
+        self.tracks.append(track)
 
     def get_score(self):
         print(self.score)
@@ -28,4 +28,5 @@ Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 Bob.change_name("Peter")
 Bob.change_age(34)
 Bob.add_tracks("UI/UX")
-Bob.get_score()
+print(Bob.get_score())
+print(Bob.tracks)
